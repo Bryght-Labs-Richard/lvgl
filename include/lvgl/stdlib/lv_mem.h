@@ -13,11 +13,9 @@ extern "C" {
 /*********************
  *      INCLUDES
  *********************/
-#include "../lv_conf_internal.h"
 
-#include "lv_string.h"
-
-#include "../misc/lv_types.h"
+#include "../config/lv_conf_internal.h"
+#include "../lv_types.h"
 
 /*********************
  *      DEFINES
@@ -165,7 +163,6 @@ void lv_mem_monitor(lv_mem_monitor_t * mon_p);
  * @param oom_p will be called when out of memory
  */
 void lv_mem_register_oom(lv_mem_oom_event oom_p);
-
 
 /**********************
  *      MACROS
